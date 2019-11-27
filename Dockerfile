@@ -4,7 +4,8 @@ WORKDIR /root
 
 RUN yum update -y && yum group install -y "Development Tools"
 
-RUN yum install -y wget cmake valgrind vim gdb net-tools
+RUN yum install -y wget cmake valgrind vim gdb net-tools 
+# java-1.8.0-openjdk-devel maven
 
 # ENV LC_CTYPE="en_US.UTF-8"
 # Set the locale
